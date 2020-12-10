@@ -40,10 +40,10 @@ spec:
             - ./app                                              
           env:          
           - name: port
-            value: {{ .Values.service.httpPort | default 9898 }}          
+            value: {{ .Values.service.port | default 8080 }}          
           ports:
             - name: http
-              containerPort: {{ .Values.service.httpPort | default 9898 }}
+              containerPort: {{ .Values.service.port | default 8080 }}
               protocol: TCP            
           livenessProbe:
             httpGet:
