@@ -1,0 +1,19 @@
+apiVersion: v1
+entries:
+  app:
+  - apiVersion: v1
+    appVersion: 0.0.1
+    created: "2020-12-10T21:11:46.181058129Z"
+    description: app Helm chart for Kubernetes
+    digest: 25f86baf58f9a5397e96a77d90e1f222ad74538b611c7db32ce2b8bb514a3a86
+    home: https://github.com/alisadikin008/chart
+    maintainers:
+    - email: alisadikin008@gmail.com
+      name: alisadikin
+    name: app
+    sources:
+    - https://github.com/alisadikin008/chart
+    urls:
+    - https://github.com/alisadikin008/charts/releases/download/app-0.0.1/app-0.0.1.tgz
+    version: 0.0.1
+generated: "2020-12-10T21:11:46.008704372Z"
