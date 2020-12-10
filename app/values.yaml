@@ -2,8 +2,8 @@
 replicaCount: 1
 
 image:
-  repository: alisadikin/app
-  tag: 3.1.5
+  repository: alisadikin008/app
+  tag: latest
   pullPolicy: IfNotPresent
 
 service:
@@ -30,7 +30,7 @@ serviceAccount:
   name:
 
 ingress:
-  enabled: false
+  enabled: true
   annotations: {}
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
