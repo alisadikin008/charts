@@ -2,9 +2,7 @@ name: Jekyll site CI
 
 on:
   push:
-    branches: [ gh-pages ]
-  pull_request:
-    branches: [ gh-pages ]
+    branches: [ master ]
 
 jobs:
   build:
@@ -22,4 +20,4 @@ jobs:
       # uses: helm/chart-releaser-action@565e7795cebb33bb2cf4f52ab8f779e21b9fa262
       uses: helm/chart-releaser-action@v1.1.0      
       env:
-        CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+        CR_TOKEN: "${{ secrets.GH_TOKEN }}"
